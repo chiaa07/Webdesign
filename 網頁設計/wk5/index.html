@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="/Users/liyu/Webdesign/wk5/js/ jQuery v3.6.0.js"></script>
+
+	<link rel ="stylesheet" type="text/css" href="css/style.css">
+
+	<script typle="text/javascript" >
+		$(document).ready(function(){
+
+			$('h2').css('color','red')
+			$('h2').css('frontSize','40px');
+
+		$('#dtd').css('color','red')
+			$('#dtd').click(function(){
+				$('#dtd').css('color','green');
+				});
+
+			$('#cc').css('background','red')
+			$('#cc').click(function(){
+				$('#cc').css('background','pink');
+				});
+
+				});
+
+			/*這行是控制字體顏色大小*/
+
+			/*$('h2').css('color','green').css('frontSize','40px');*/   
+
+
+			$(document).ready(function(){
+
+				$("#btn1").click(function(){
+					alert("text:"+ $("#test").text());
+
+				});
+				$("#btn2").click(function(){
+				alert("HTML:"+ $("#test").html());	
+				
+				});
+				});
+
+				$(document).ready(function(){
+					$(".dd").html("<spanclass='red'>Hello<b>Again</b></span>");
+					});
+
+
+				$(document).ready(function(){
+					$("#btn1").click(function(){
+						alert("text:"+ $("#test2").val());
+						});
+						$("#btn2").click(function(){
+							$("#test2").val("DTD");
+							});
+});
+
+
+
+
+			</script>
+
+
+</head>
+<body>
+	<h2>Hi query</h2>
+
+    <div id="dtd">HI CHIA </div>
+
+	<div id="cc"><img class="img-box1" src="/Users/liyu/Webdesign/wk5/img/pic1.jpeg"></div>
+
+
+	<p id="test">This is some <b> blod </b> text in a paragraph.</p>
+
+	<button id="btn1">Show Text</button>
+	<button id="btn2">Show HTML</button>
+
+		<div class="dd" ></div>
+		<div class="dd"></div>
+		<div class="dd"></div>
+
+		<p>Name:<input type="text" id="test2"value="Mickey Mouse"></p>
+		<button id="btn1">Show Value</button>
+		<button id="btn2">Input Value</button>
+  
+
+
+
+
+
+
+
+</body>
+</html>
